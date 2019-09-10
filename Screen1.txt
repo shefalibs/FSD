@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SCREEN1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+              background-color:rgb(80, 80, 79);
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            /* Add padding to containers */
+            .container {
+              padding: 16px;
+              background-color:rgb(228, 222, 217);
+            }
+            
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+              width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              display: inline-block;
+              border: none;
+            }
+            
+            input[type=text]:focus, input[type=password]:focus {
+              background-color: #ddd;
+              outline: none;
+            }
+            
+            /* Overwrite default styles of hr */
+            hr {
+              border: 1px solid #f1f1f1;
+              margin-bottom: 25px;
+            }
+            
+            /* Set a style for the submit button */
+            .registerbtn {
+              background-color: #4CAF50;
+              color: white;
+              padding: 16px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              opacity: 0.9;
+            }
+            
+            .registerbtn:hover {
+              opacity: 1;
+            }
+            
+            
+            /* Set a grey background color and center the text of the "sign in" section */
+            .signin {
+              background-color: #f1f1f1;
+              text-align: center;
+            }
+            </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>REGISTRATION FORM</h2>
+        <form id="submitDetails" action="/action_page.php">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-group">
+                <label for="name">Full name:</label><br>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="First Name">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label><br>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="radio1">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                            checked>Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="radio2">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="radio3">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option2">Other
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input type="int" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob" placeholder="Enter date of birth" name="dob">
+            </div>
+            <div class="form-group">
+                <label for="education">Select education:</label>
+                <select class="form-control" id="education" name="education">
+                    <option>Bachelors of Engineering</option>
+                    <option>Bachelors of Commerce</option>
+                    <option>Bachelors of Architecture</option>
+                    <option>Bachelors of Science</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Select skill(s):</label><br>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check1">
+                        <input type="checkbox" class="form-check-input" id="check1" name="skill1" value="skill1"
+                            checked>Time Management
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check2">
+                        <input type="checkbox" class="form-check-input" id="check2" name="skill2"
+                            value="skill2">Leadership
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check3">
+                        <input type="checkbox" class="form-check-input" id="check3" name="skill3"
+                            value="skill3">Discipline
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="check4">
+                        <input type="checkbox" class="form-check-input" id="check4" name="skill4" value="skill4">Team
+                        Management
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="organization">Organization:</label>
+                <input type="text" class="form-control" id="organization" placeholder="Enter organization"
+                    name="organization">
+            </div>
+            <div class="form-group">
+                <label for="location">Chose your current location:</label>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15551.578666272715!2d77.5963159!3d12.978588449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1568113690789!5m2!1sen!2sin"
+                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="aadhar">Aadhar number:</label>
+                <input type="int" class="form-control" id="aadhar" placeholder="Enter Aadhar number" name="aadhar"
+                    maxlength="12" min="12">
+            </div>
+            <div class="form-group">
+                <label for="pan">PAN:</label>
+                <input type="text" class="form-control" id="pan" placeholder="Enter PAN" name="pan" maxlength="12"
+                    min="12">
+            </div>
+
+
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="form-group">
+            <button type="submit" class="btn btn-info">Submit</button>
+            <button type="submit" class="btn btn-info">Cancel</button>
+        </div>
+            
+            <div class="container signin">
+                    <p>Already have an account? <a href="#">Sign in</a>.</p>
+                  </div>
+        </form>
+    </div>
+</body>
+
+</html>

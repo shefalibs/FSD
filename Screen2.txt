@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        #position {
+            padding-left: 50px;
+        }
+        img{
+            float: left;
+        }
+        @media only screen and (orientation: landscape) {
+            #position {
+            padding-left: 300px;
+        }
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="position">
+        <h2>USER PROFILE</h2>
+        <div class="card" style="width:400px;height:50%">
+            <img class="card-img-top" src="images/navya.png" alt="Card image" style="width:100%">
+        
+        <div class="card-body " style="padding-top: 100px">
+            <h4 class="card-title">Navya Prabhu</h4>
+            <h5>Email:</h5>navyaprabhum@gmail.com
+            <hr>
+            <h5>DOB:</h5>23/12/1997
+            <hr>
+            <h5>Gender:</h5>Female
+            <hr>
+            <h5>Phone:</h5>9741383513
+            <hr>
+            <h5>Address:</h5>Shambavi Nilaya,Manoor
+            <hr>
+            <h5>Aadhar no:</h5>8678 3456 9876
+            <hr>
+            <h5>Education:</h5>BE(Computer Science)
+            <hr>
+            <h5>Current location:</h5>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7900243096337!2d77.61797831439272!3d13.049033416706093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1765236c336f%3A0x22254ae8af264cd5!2sIBM%20India%20D3%20Block!5e0!3m2!1sen!2sin!4v1567596697493!5m2!1sen!2sin"
+                width="360" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+
+        </div>
+        </div>
+        <br>
+
+</body>
+
+</html>
