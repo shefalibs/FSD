@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class OffersServiceRestController {
 
-	@RequestMapping(value = "/getCurrentOffers", method = RequestMethod.GET)
+	@RequestMapping(value = "/getCurrentOffer", method = RequestMethod.GET)
 	@ResponseBody
 	public List<Offers> getCurrentOffers() {
 		List<Offers> offers = new ArrayList<Offers>();
