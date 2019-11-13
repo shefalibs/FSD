@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta charset="ISO-8859-1">
+<title>List Employees</title>
+</head>
+<body>
+	<h4>Employee List</h4>
+	<a href ="@{/employees/showFormForAdd}" class="btn btn-primary btn-sm mb-3">Add Employee</a>
+	<br/>
+	<table>
+		<tr>
+			<thead>First Name</thead>
+			<thead>Last Name</thead>
+			<thead>Email</thead>
+		</tr>
+		
+		<tr th:each="tempEmployee:${employees}">
+			<td th:text="${tempEmployee.firstName}"/>
+			<td th:text="${tempEmployee.lastName}"/>
+			<td th:text="${tempEmployee.email}"/>
+		</tr>
+	</table>
+			
+			
+	</table>
+</body>
+</html>
