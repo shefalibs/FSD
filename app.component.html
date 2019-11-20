@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <div>
+    <header>
+      <div id="header-panel">
+
+        <div id="site-logo">
+          <img src="https://image.flaticon.com/icons/svg/164/164438.svg" height="60px" width="80px" alt="site-logo">
+        </div>
+
+        <div class="dropdown">
+          <div class="wrap">
+            <div class="search">
+              <input type="text" class="searchTerm" placeholder="What are you looking for?">
+              <button type="submit" class="searchButton">
+                <img
+                  src="https://www.konfest.com/wp-content/uploads/2019/05/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-icons-search-symbol-find-magnifying-glass-101.png"
+                  height="20px" width="20px">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown" id="first-dropdown">
+          <button (click)="toggleHeader()" class="btn btn-xs btn-default dropdown-toggle" type="button"
+            data-toggle="dropdown">Products</button>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-xs btn-default " type="button" id="dropdownMenu1" data-toggle="dropdown">About
+            us</button>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-xs btn-default" type="button" id="dropdownMenu1" data-toggle="dropdown">Contact
+            us</button>
+        </div>
+
+        <div class="dropdown" id="vl"></div>
+
+        <div class="icons">
+          <a href="app.component.html">
+            <img src="https://image.flaticon.com/icons/svg/69/69524.svg" height="20px" width="20px"></a>
+        </div>
+
+        <div class="icons">
+          <a href="#">
+            <img src="https://image.flaticon.com/icons/svg/1828/1828503.svg" height="20px" width="20px"> </a>
+        </div>
+
+        <div class="icons">
+          <a href="#">
+            <img src="https://image.flaticon.com/icons/png/512/34/34627.png" height="20px" width="20px"> </a>
+        </div>
+
+        <div id="sliding-window" style="display: none">
+
+          <div class="product-dropdown">
+            <button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+              data-toggle="dropdown">Furnitures</button>
+          </div>
+
+          <div class="product-dropdown">
+            <button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+              data-toggle="dropdown">Appliances</button>
+          </div>
+
+          <div class="product-dropdown">
+            <button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+              data-toggle="dropdown">Electronics</button>
+          </div>
+
+          <div class="product-dropdown">
+            <button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+              data-toggle="dropdown">Automobile</button>
+          </div>
+
+          <div class="product-dropdown">
+              <button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                data-toggle="dropdown">Apartments</button>
+            </div>
+
+        </div>
+
+        <div class="product-category-dropdown" style="display: none">
+
+            
+               <p>Car</p>
+               <p></p>
+              </div>
+
+        
+      </div>
+    </header>
+  </div>
+
+  <div>
+    <main>
+
+      <div id="offers-slide">
+        <slideshow [minHeight]="'250px'" [autoPlay]="true" [showArrows]="true" [imageUrls]="imageSources"
+          [lazyLoad]="imageSources?.length > 1" [autoPlayWaitForLazyLoad]="true" [showDots]="true">
+        </slideshow>
+      </div>
+
+      <div id="products-slide">
+        <div class="jumbotron">
+          <h4 class="display-4">MOST POPULAR PRODUCTS</h4>
+          <p class="lead">Our products which are sold more often</p>
+        </div>
+        <angular-image-slider [images]="imagesURL"></angular-image-slider>
+      </div>
+
+      <div id="products-slide">
+        <div class="jumbotron">
+          <h4 class="display-4">JUST ARRIVED PRODUCTS</h4>
+          <p class="lead">Products which are new to our market</p>
+        </div>
+        <angular-image-slider [images]="imagesURL"></angular-image-slider>
+      </div>
+
+    </main>
+  </div>
+
+  <div>
+    <footer>
+
+    </footer>
+  </div>
+
+</body>
+
+</html> 
