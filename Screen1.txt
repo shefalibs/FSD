@@ -1,3 +1,11 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/is_not_iterable
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
